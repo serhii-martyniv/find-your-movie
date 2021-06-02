@@ -1,0 +1,28 @@
+div, h1, h2, h3, h4, h5 {
+  color: #fff;
+  font-weight: 400;
+  font-family: "sans-serif";
+}
+.row {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  background: #555;
+
+  #root {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .container {
+      padding-right: 40px;
+      padding-left: 40px;
+      background: #232323;
+    }
+  }
+}

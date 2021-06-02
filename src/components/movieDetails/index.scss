@@ -1,0 +1,32 @@
+.movieDetails {
+  .headerMovieDetail {
+    padding-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    margin-bottom: 40px;
+    a {
+      justify-self: end;
+      color: #f65261;
+    }
+  }
+  .row {
+    img {
+      margin-right: 60px;
+      max-width: 300px;
+    }
+    .description {
+      .titleMovie {
+        h1 {
+          margin-right: 20px;
+        }
+      }
+      .row {
+        div {
+          margin-right: 20px;
+          color: #f65261;
+        }
+      }
+    }
+  }
+  margin-bottom: 10px;
+}

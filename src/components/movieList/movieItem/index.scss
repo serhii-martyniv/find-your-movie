@@ -1,0 +1,36 @@
+.movieItem {
+  .dots {
+    width: 100px;
+    height: 34px;
+    background-image: radial-gradient(circle, black 8%, transparent 0);
+    background-size: 100% 33.33%;
+    position: relative;
+    top: 36px;
+    div {
+      position: relative;
+      top: 35px;
+      display: none;
+    }
+
+    &.display-block {
+      div {
+        display: block;
+      }
+    }
+    &.display-none {
+      div {
+        div {
+          display: none;
+        }
+      }
+    }
+  }
+  .description {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.search {
+  margin: 40px 60px 0;
+  display: flex;
+  a {
+    text-align: center;
+    padding: 10px;
+    background: #f65261;
+    border-radius: 3px;
+  }
+  input {
+    width: 800px;
+    padding-left: 10px;
+    margin-right: 20px;
+  }
+}

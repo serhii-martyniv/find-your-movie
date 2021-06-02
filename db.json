@@ -1,0 +1,9 @@
+{
+  "movieList": [
+    { "id": 1, "image": "https://via.placeholder.com/600/56a8c2", "alt": "image", "title": "Wrath of Man", "year": 2021, "genre": "crime", "overview": "3.5", "runtime": "90", "description" : "A ONE MAN ARMY.\nH is a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week." },
+    { "id": 2, "image": "https://via.placeholder.com/600/f66b97", "alt": "image", "title": "Cherry", "year": 2021, "genre": "crime", "overview": "3.5", "runtime": "120", "description" : "Cherry drifts from college dropout to army medic in Iraq – anchored only by his true love, Emily. But after returning from the war with PTSD, his life spirals into drugs and crime as he struggles to find his place in the world."  },
+    { "id": 3, "image": "https://via.placeholder.com/600/24f355", "alt": "image", "title": "The Pianist", "year": 2002, "genre": "drama", "overview": "5", "runtime": "80", "description" : "The true story of pianist Władysław Szpilman’s experiences in Warsaw during the Nazi occupation." },
+    { "id": 4, "image": "https://via.placeholder.com/600/810b14", "alt": "image", "title": "The Truman Show", "year": 1998, "genre": "comedy", "overview": "5", "runtime": "103", "description" : "Truman Burbank is the star of The Truman Show, a 24-hour-a-day reality TV show that broadcasts every aspect of his life without his knowledge"},
+    { "id": 5, "image": "https://via.placeholder.com/600/45601a", "alt": "image", "title": "Shaun of the Dead", "year": 2004, "genre": "comedy", "overview": "5", "runtime": "99", "description" : "A ROMANTIC COMEDY. WITH ZOMBIES.\nShaun lives a supremely uneventful life, which revolves around his girlfriend, his mother, and, above all, his local pub. This gentle routine is threatened when the dead return to life and make strenuous attempts to snack on ordinary Londoners."}
+  ]
+}

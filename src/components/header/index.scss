@@ -1,0 +1,17 @@
+.header {
+  padding-bottom: 120px;
+  margin-bottom: 10px;
+  .topBar {
+    padding-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    a {
+      justify-self: end;
+    }
+  }
+  .slogan {
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 60px 60px 0;
+  }
+}
