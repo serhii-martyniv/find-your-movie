@@ -1,11 +1,12 @@
 .movieItem {
   .dots {
-    width: 100px;
-    height: 34px;
-    background-image: radial-gradient(circle, black 8%, transparent 0);
-    background-size: 100% 33.33%;
     position: relative;
+    width: 65px;
+    height: 32px;
+    background-image: radial-gradient(circle, white 8%, transparent 0);
+    background-size: 100% 33.33%;
     top: 36px;
+    cursor: pointer;
     div {
       position: relative;
       top: 35px;

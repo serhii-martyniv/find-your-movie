@@ -1,3 +1,5 @@
+import {getMovies} from "../api/Api";
+
 const ADD_MOVIE = "ADD-MOVIE";
 const UPDATE_MOVIE = "UPDATE-MOVIE";
 const DELETE_MOVIE = "DELETE-MOVIE";
@@ -6,6 +8,8 @@ const SET_FILTER = "SET-FILTER";
 const SET_ACTIVE_MOVIE_ID = "SET-ACTIVE-MOVIE-ID";
 const FETCH_MOVIES = "FETCH-MOVIES";
 const GET_MOVIE = "GET_MOVIE";
+const SET_MOVIES = "SET_MOVIES";
+
 let initialState = {
     activeMovieId: '',
     categories: [
@@ -39,6 +43,8 @@ export const moviesReducer = (state = initialState, action) => {
                 ...state,
                 movieList: [...state.movieList, newMovie]
             }
+        case SET_MOVIES:
+            return {...state, movieList: action.movies}
         case UPDATE_MOVIE:
             let updatedMovielist = state.movieList.map((movie) => {
                 if (movie.id === state.activeMovieId) {
@@ -100,5 +106,14 @@ export const updateMovieActionCreator = (updatedMovie) => ({ type: UPDATE_MOVIE,
 export const addMovieActionCreator = (newMovie) => ({ type: ADD_MOVIE, newMovie: newMovie });
 export const getMovieActionCreator = (movieId) => ({type: GET_MOVIE, movieId})
 export const deleteMovieActionCreator = (movieId) => ({ type: DELETE_MOVIE, movieId });
+export const setMoviesActionCreator = (movies) => ({ type: SET_MOVIES, movies });
+
+export const setMoviesThunkCreator = () => {
+    return (dispatch) => {
+        getMovies().then((data) => {
+            dispatch(setMoviesActionCreator(data))
+        })
+    }
+}
 
 export default moviesReducer

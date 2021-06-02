@@ -1,6 +1,26 @@
 import MovieList from "./MovieList";
 import {connect} from "react-redux";
-import {updateSort, updateFilter, updateMovieActionCreator, addMovieActionCreator, deleteMovieActionCreator, updateMovieIdActionCreator} from "../../modules/movies-reducer"
+import {
+    updateSort,
+    updateFilter,
+    updateMovieActionCreator,
+    addMovieActionCreator,
+    deleteMovieActionCreator,
+    updateMovieIdActionCreator,
+    setMoviesThunkCreator
+} from "../../modules/movies-reducer"
+import React from "react";
+
+class MovieListContainer extends React.Component{
+
+    componentDidMount() {
+        this.props.setMovies()
+    }
+
+    render() {
+        return <MovieList {...this.props}/>
+    }
+}
 
 const mapStateToProps = (state) => {
     return {
@@ -31,8 +51,11 @@ const mapDispatchToProps = (dispatch) => {
         },
         updateMovieId: (movieId) => {
             dispatch(updateMovieIdActionCreator(movieId))
+        },
+        setMovies: () => {
+            dispatch(setMoviesThunkCreator())
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MovieList)
+export default connect(mapStateToProps, mapDispatchToProps)(MovieListContainer)

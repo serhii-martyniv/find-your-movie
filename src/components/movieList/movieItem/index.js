@@ -17,7 +17,7 @@ export default (props) => {
                     pathname: `/film/${props.movieItem.id}`,
                 }
         }>
-                 {/*<img src={img} /> */}
+                 <img src={props.movieItem.image} />
             </Link>
            <div className="description">
                <div className="col">
