@@ -2,16 +2,16 @@ import MovieList from './components/movieList/MovieListContainer';
 
 const routes = [
   {
-    path: '/',
+    path: '/find-your-movie/',
     exact: true,
     component: MovieList
   },
   {
-    path: '/film/:id',
+    path: '/find-your-movie/film/:id',
     component: MovieList
   },
   {
-    path: '/search/:search',
+    path: '/find-your-movie/search/:search',
     component: MovieList
   },
 ];

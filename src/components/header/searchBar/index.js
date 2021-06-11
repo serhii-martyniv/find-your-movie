@@ -14,7 +14,7 @@ export default () => {
             <input type="text" placeholder="What do you want to watch?" onChange={onChangeSearchValue} />
             <Link className="searchButton" to={
                 {
-                    pathname:  searchValue ? `/search/${searchValue}` : '/',
+                    pathname:  searchValue ? `/find-your-movie/search/${searchValue}` : '/',
                 }
             }>Search</Link>
         </div>

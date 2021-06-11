@@ -14,7 +14,7 @@ export default (props) => {
             </div>
             <Link to={
                 {
-                    pathname: `/film/${props.movieItem.id}`,
+                    pathname: `/find-your-movie/film/${props.movieItem.id}`,
                 }
         }>
                  <img src={props.movieItem.image} />

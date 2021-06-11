@@ -11,19 +11,19 @@ import {Route} from "react-router-dom";
 function App() {
     return (
         <>
-            <Route exact path="/">
+            <Route exact path="/find-your-movie/">
                 <HeaderContainer logo={<Logo />} />
                 <MovieListContainer />
             </Route>
-            <Route path="/film/:id" component={MovieListContainer}>
+            <Route path="/find-your-movie/film/:id" component={MovieListContainer}>
                 <MovieDetailsContainer logo={<Logo />} />
                 <MovieListContainer />
             </Route>
-            <Route path="/search/:search">
+            <Route path="/find-your-movie/search/:search">
                 <HeaderContainer logo={<Logo />} />
                 <MovieListContainer />
             </Route>
-            <Route path="/not-found" component={NotFound} />
+            <Route path="/find-your-movie/not-found" component={NotFound} />
             <Footer>
                 <Logo />
             </Footer>

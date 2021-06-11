@@ -14,7 +14,7 @@ export default (props) => {
             {props.movie && <div>
                 <div className='headerMovieDetail'>
                     {props.logo}
-                    <Link to="/">Search </Link>
+                    <Link to="/find-your-movie/">Search </Link>
                 </div>
                 <div className="row">
                     <img src={props.movie.image} alt={props.movie.alt}/>
